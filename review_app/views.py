@@ -120,3 +120,9 @@ def product_detail(request, slug):
     product = get_object_or_404(Product, slug=slug)
     serializer = ProductDetailSerializer(product)
     return Response(serializer.data)
+
+
+
+@api_view(['GET'])
+def ask_question(request):
+    return Response("How is it going?", status=status.HTTP_200_OK)
