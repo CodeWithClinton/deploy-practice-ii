@@ -109,7 +109,6 @@ def generate_reviews_summary(request, slug):
 
 
 
-
 @api_view(['GET'])
 def list_products(request):
     products = Product.objects.all().order_by('-id')
