@@ -123,6 +123,3 @@ def product_detail(request, slug):
 
 
 
-@api_view(['GET'])
-def ask_question(request):
-    return Response("How is it going?", status=status.HTTP_200_OK)
